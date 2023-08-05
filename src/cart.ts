@@ -1,6 +1,6 @@
 import Buyable from "./buyable";
 export default class Cart {
-    private items: Buyable[] = [
+    public items: Buyable[] = [
         {
             id: 4,
             name: "Avengers",
@@ -18,9 +18,9 @@ export default class Cart {
     constructor() {
         this.sum = 0;
     }
-    add(item: Buyable): void {
-        this.items.push(item);
-    }
+    // add(item: Buyable): void {
+    //     this.items.push(item);
+    // }
     totalSum(): number {
         for (let item of this.items) {
             if (item.hasOwnProperty('price')) {
@@ -45,7 +45,3 @@ export default class Cart {
         })
     }
 }
-
-const cart = new Cart()
-let one = cart.totalSum();
-console.log(one)

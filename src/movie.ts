@@ -30,5 +30,3 @@ export default class Movie {
 
     }
 }
-
-// const avengers = new Movie(4, 'Avenger', 300, 'Мстители', 2012, 'USA', 'Avenger Assamble', 'Fantasy', 137);
