@@ -35,7 +35,7 @@ export default class Cart {
                 this.sum += item.price;
             }
         }
-        return this.sum = this.sum - this.sum * (discount / this.sum);
+        return this.sum = this.sum - this.sum * (discount / 100);
     }
     deleteFromCart(id: number): void {
         this.items.forEach((elem) => {
