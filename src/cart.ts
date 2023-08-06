@@ -28,7 +28,7 @@ export default class Cart {
     }
     sumWithDiscount(discount: number): number {
         for (let item of this.items) {
-            if (Object.hasOwn(item,'string')) {
+            if (Object.hasOwn(item,'price')) {
                 this.sum += item.price;
             }
         }
