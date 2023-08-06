@@ -14,16 +14,13 @@ export default class Cart {
 
         }
     ];
-    sum: number;
-    constructor() {
-        this.sum = 0;
-    }
+    sum: number = 0;
     // add(item: Buyable): void {
     //     this.items.push(item);
     // }
     totalSum(): number {
         for (let item of this.items) {
-            if (item.hasOwnProperty('price')) {
+            if (Object.hasOwn(item,'price')) {
                 this.sum += item.price;
             }
         }
@@ -31,7 +28,7 @@ export default class Cart {
     }
     sumWithDiscount(discount: number): number {
         for (let item of this.items) {
-            if (item.hasOwnProperty('price')) {
+            if (Object.hasOwn(item,'string')) {
                 this.sum += item.price;
             }
         }
